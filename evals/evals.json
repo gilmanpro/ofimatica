@@ -1,0 +1,53 @@
+{
+  "skill_name": "ofimatica",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Necesito crear un script en Python con openpyxl para generar un reporte de ventas. El Excel debe tener: una hoja llamada 'Ventas 2026', encabezados en negrita con fondo azul (#4472C4) y texto blanco, columnas: Producto, Cantidad, Precio Unitario, Total. 5 filas de datos de ejemplo con productos electrónicos. La columna Total debe ser una fórmula =Cantidad*Precio. El ancho de columna debe ajustarse al contenido.",
+      "expected_output": "Script Python que usa openpyxl para crear un archivo .xlsx con estilos, fórmula SUM y formato profesional.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Tengo un archivo ventas.xlsx con datos en Sheet1 desde A1 hasta F100. La primera fila son encabezados. Necesito un script Python con openpyxl que: 1) lea el archivo, 2) elimine las filas donde la columna C (Status) sea 'Cancelado', 3) añada una nueva columna G con la fórmula =F*0.07 (IVA), 4) aplique formato condicional: si la celda en columna F (Total) es mayor a 1000, que se pinte de verde claro. Guardar como ventas_limpio.xlsx.",
+      "expected_output": "Script Python que usa openpyxl para leer, filtrar, modificar y aplicar formato condicional a un archivo .xlsx existente.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Crea un script Python con openpyxl que genere un dashboard de ventas en Excel con: 1) datos de ejemplo de ventas mensuales para 12 meses (Ene-Dic) de 3 productos (Laptops, Tablets, Smartphones), 2) un gráfico de líneas con las 3 series, 3) una tabla con formato de columnas bandeado (TableStyleMedium9), 4) formato condicional tipo DataBar en la columna de totales.",
+      "expected_output": "Script Python que usa openpyxl para generar un dashboard con chart + tabla + formato condicional.",
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Necesito migrar un archivo CSV de 200,000 filas a Excel usando Python con openpyxl. El CSV tiene columnas: fecha, producto, cantidad, precio, total. Debe usar write-only mode por rendimiento. Las primeras 5 columnas deben tener formato de número apropiado. El archivo de salida debe llamarse 'export_masivo.xlsx'. Dame el script completo.",
+      "expected_output": "Script Python que usa openpyxl write-only mode para procesar un CSV grande y generar Excel optimizado.",
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "Dame un ejemplo completo de cómo usar openpyxl para crear un archivo Excel con validación de datos: una columna con lista desplegable (Alto, Medio, Bajo), una columna con validación de números entre 0 y 100, y una celda con comentario explicativo. También quiero que la hoja esté protegida con contraseña 'admin123' excepto las celdas con validación.",
+      "expected_output": "Script Python que usa openpyxl con DataValidation, Comment y SheetProtection.",
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "Crea un CV desde cero para un auxiliar administrativo con 4 años de experiencia en facturación y atención a proveedores, que busca puesto de asistente administrativo en una empresa del sector comercial. No hay oferta concreta.",
+      "expected_output": "CV completo en español: datos de contacto, perfil profesional de 3-6 líneas, experiencia con 3-4 viñetas de logros cuantificables por puesto (acción + contexto + resultado), competencias hard/soft, formación e idiomas. Formato ATS-friendly (fuente clásica, sin gráficos, 1 página).",
+      "files": []
+    },
+    {
+      "id": 7,
+      "prompt": "Optimiza mi CV para pasar los filtros ATS de una oferta de desarrollador web. La oferta pide: '3 años de experiencia con JavaScript, React y Node.js, conocimientos de PostgreSQL, trabajo en equipo y metodologías ágiles'. Mi CV actual tiene experiencia genérica, dos columnas, gráfico de barras de habilidades, foto y frases como 'persona responsable y proactiva' e 'informática nivel usuario'.",
+      "expected_output": "CV reescrito: estructura estándar de una columna, keywords de la oferta integradas de forma natural (JavaScript, React, Node.js, PostgreSQL, ágil), logros cuantificables, y eliminados foto, gráficos, clichés y datos personales innecesarios.",
+      "files": []
+    },
+    {
+      "id": 8,
+      "prompt": "Tengo 8 años de experiencia en ventas retail (incluido el liderazgo de un equipo de 6 vendedores) y quiero cambiar a gestión de proyectos. Mi último empleo terminó hace 8 meses y durante la pausa cuidé a un familiar. Me saqué la certificación PMP este año y aprendí Trello y Jira por mi cuenta. ¿Cómo estructuro mi CV para postular a puestos de asistente de project manager?",
+      "expected_output": "CV estructurado para transición de carrera: perfil profesional que explica el cambio y las fortalezas transferibles, experiencia dividida en relevante (con métricas) y adicional, brecha de 8 meses explicada como periodo de desarrollo (PMP, Trello, Jira), logros cuantificables y nota de entrega con PDF y extensión.",
+      "files": []
+    }
+  ]
+}

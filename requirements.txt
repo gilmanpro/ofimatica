@@ -1,0 +1,16 @@
+# PDF y scripts compartidos
+pypdf
+pdfplumber
+pymupdf
+pdfminer.six
+pdfquery
+reportlab
+fpdf2
+pytesseract
+pdf2image
+pillow
+pandas
+openpyxl
+lxml
+markitdown[pptx]
+pywin32 ; sys_platform == "win32"
